@@ -1,0 +1,21 @@
+{
+  "name": "ns-log-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "d3-flame-graph": "^0.4.2",
+    "d3-flame-graphs": "^3.1.0",
+    "ejs": "^2.5.5",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "opener": "^1.4.2",
+    "webpack-bundle-analyzer": "^2.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

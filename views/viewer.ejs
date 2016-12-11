@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <title>NativeScript Benckmark</title>
+    <style>
+        <%- assetContent("d3-flame-graph.css") %>
+    </style>
+  </head>
+
+  <body>
+    <h1>Hi there reports</h1>
+    <div id="app"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.js"></script>
+    <script>
+        <%- assetContent("d3-flame-graph.js") %>
+    </script>
+
+    <script>
+      var data = <%- data %>;
+
+      tooltip = function(d) {
+        return d.name + " <br /><br /> " + d.value + " ms<br /> " + (((d.value / data.value) * 100).toFixed(2)) + "% of total";
+      };
+
+      var flameGraph = d3.flameGraph("#app", data)
+        .size([1200,800])
+        .cellHeight(20)
+        .tooltip(tooltip)
+        .render();        
+    </script>
+  </body>
+</html>
