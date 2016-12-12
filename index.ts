@@ -15,44 +15,52 @@ function createFiller(value): D3Frame {
         name: "inner",
         filler: true,
         value
-    }
+    };
 };
 
 function transformEntry(e: Frame): D3Frame {
-    let chidren: D3Frame[] = undefined;
+    let children: D3Frame[] = undefined;
     let currentStart = e.start;
     if (e.children && e.children.length > 0) {
-        chidren = [];
+        children = [];
         for (let child of e.children) {
             if (currentStart < child.start) {
-                chidren.push(createFiller(child.start - currentStart));
+                children.push(createFiller(child.start - currentStart));
             }
-            chidren.push(transformEntry(child));
+            children.push(transformEntry(child));
             currentStart = child.start + child.time;
         }
 
         if (currentStart < (e.start + e.time)) {
-            chidren.push(createFiller((e.start + e.time) - currentStart));
+            children.push(createFiller((e.start + e.time) - currentStart));
         }
     }
 
+    let name = e.category;
+    if (e.description) {
+        name += " - " + e.description;
+    }
+    if (e.callee) {
+        name += " - " + e.callee;
+    }
+
     return {
-        name: `${e.category || ""} - ${e.description || ""}`,
+        name: name,
         value: e.time,
-        children: chidren
+        children: children
     };
 }
 
 function loadData(inputPath): D3Frame {
     let { entries }: { entries: Frame[] } = require(inputPath);
 
-    const last = entries[entries.length - 1]
-    var all = transformEntry({
+    const last = entries[entries.length - 1];
+    let all = transformEntry({
         category: "ALL",
         start: 0,
         time: last.start + last.time,
         children: entries
-    })
+    });
 
     return all;
 }
@@ -86,8 +94,13 @@ function generateReport(options) {
             if (err) {
                 console.log("ERROR: " + err);
             }
-mkdir.sync(path.dirname(outputPath));
+            mkdir.sync(path.dirname(outputPath));
             fs.writeFileSync(outputPath, reportHtml);
+
+            if (options.show) {
+                const opener = require("opener");
+                opener(outputPath);
+            }
         }
     );
 }
@@ -98,9 +111,11 @@ const options: Options = <any>minimist(process.argv.slice(2), {
         input: "input.json",
         output: "report.html"
     },
+    boolean: ["show"],
     alias: {
         i: ["input"],
         o: ["output"],
+        s: ["show"]
     }
 });
 

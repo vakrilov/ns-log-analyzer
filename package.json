@@ -9,10 +9,11 @@
     "ejs": "^2.5.5",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
-    "opener": "^1.4.2",
-    "webpack-bundle-analyzer": "^2.1.1"
+    "opener": "^1.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "0.0.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
