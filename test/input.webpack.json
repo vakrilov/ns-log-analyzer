@@ -1,898 +1,896 @@
-{
-    "entries": [
-        {
-            "callee": "Runtime::Init",
-            "category": "init",
-            "description": "",
-            "start": 785.66,
-            "children": [],
-            "time": 219.23
-        },
-        {
-            "callee": "Module::RequireCallback",
-            "category": "require",
-            "description": "/data/data/org.nativescript.nativescriptsdkexamplesng/files/app/./starter.js",
-            "start": 1189.66,
-            "children": [
-                {
-                    "callee": "Module::LoadImpl",
-                    "category": "require",
-                    "description": "Module.resolvePath",
-                    "start": 1189.72,
-                    "children": [],
-                    "time": 0.25
-                },
-                {
-                    "callee": "Module::LoadModule",
-                    "category": "require",
-                    "description": "",
-                    "start": 1190.00,
-                    "children": [
-                        {
-                            "callee": "Module::LoadModule",
-                            "category": "require",
-                            "description": "Compilation",
-                            "start": 1190.06,
-                            "children": [],
-                            "time": 6.94
-                        },
-                        {
-                            "callee": "Module::LoadModule",
-                            "category": "require",
-                            "description": "Execution",
-                            "start": 1197.11,
-                            "children": [
-                                {
-                                    "callee": "Module::RequireCallback",
-                                    "category": "require",
-                                    "description": "./vendor",
-                                    "start": 1197.19,
-                                    "children": [
-                                        {
-                                            "callee": "Module::LoadImpl",
-                                            "category": "require",
-                                            "description": "Module.resolvePath",
-                                            "start": 1197.23,
-                                            "children": [],
-                                            "time": 0.26
-                                        },
-                                        {
-                                            "callee": "Module::LoadModule",
-                                            "category": "require",
-                                            "description": "",
-                                            "start": 1197.53,
-                                            "children": [
-                                                {
-                                                    "callee": "Module::LoadModule",
-                                                    "category": "require",
-                                                    "description": "Compilation",
-                                                    "start": 1197.57,
-                                                    "children": [],
-                                                    "time": 654.64
-                                                },
-                                                {
-                                                    "callee": "Module::LoadModule",
-                                                    "category": "require",
-                                                    "description": "Execution",
-                                                    "start": 1852.31,
-                                                    "children": [],
-                                                    "time": 926.20
-                                                }
-                                            ],
-                                            "time": 1581.04
-                                        }
-                                    ],
-                                    "time": 1581.43
-                                },
-                                {
-                                    "callee": "Module::RequireCallback",
-                                    "category": "require",
-                                    "description": "./bundle",
-                                    "start": 2778.90,
-                                    "children": [
-                                        {
-                                            "callee": "Module::LoadImpl",
-                                            "category": "require",
-                                            "description": "Module.resolvePath",
-                                            "start": 2778.94,
-                                            "children": [],
-                                            "time": 0.32
-                                        },
-                                        {
-                                            "callee": "Module::LoadModule",
-                                            "category": "require",
-                                            "description": "",
-                                            "start": 2779.28,
-                                            "children": [
-                                                {
-                                                    "callee": "Module::LoadModule",
-                                                    "category": "require",
-                                                    "description": "Compilation",
-                                                    "start": 2779.33,
-                                                    "children": [],
-                                                    "time": 956.26
-                                                },
-                                                {
-                                                    "callee": "Module::LoadModule",
-                                                    "category": "require",
-                                                    "description": "Execution",
-                                                    "start": 3735.70,
-                                                    "children": [
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "com/tns/NativeScriptApplication.getInstance",
-                                                            "start": 3786.99,
-                                                            "children": [],
-                                                            "time": 0.43
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "android/content/ContextWrapper.getPackageName",
-                                                            "start": 3787.76,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                    "category": "Java",
-                                                                    "description": "Runtime.resolveMethodOverload",
-                                                                    "start": 3787.82,
-                                                                    "children": [],
-                                                                    "time": 6.32
-                                                                }
-                                                            ],
-                                                            "time": 6.50
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "android/content/ContextWrapper.getApplicationContext",
-                                                            "start": 3794.35,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                    "category": "Java",
-                                                                    "description": "Runtime.resolveMethodOverload",
-                                                                    "start": 3794.39,
-                                                                    "children": [],
-                                                                    "time": 0.32
-                                                                }
-                                                            ],
-                                                            "time": 0.41
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3797.46,
-                                                            "children": [],
-                                                            "time": 0.05
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3800.99,
-                                                            "children": [],
-                                                            "time": 0.05
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "android/app/Application.registerActivityLifecycleCallbacks",
-                                                            "start": 3801.08,
-                                                            "children": [],
-                                                            "time": 0.13
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "android/app/Application.registerComponentCallbacks",
-                                                            "start": 3801.25,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                    "category": "Java",
-                                                                    "description": "Runtime.resolveMethodOverload",
-                                                                    "start": 3801.28,
-                                                                    "children": [],
-                                                                    "time": 3.18
-                                                                }
-                                                            ],
-                                                            "time": 3.29
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "android/content/ContextWrapper.getApplicationContext",
-                                                            "start": 3806.06,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                    "category": "Java",
-                                                                    "description": "Runtime.resolveMethodOverload",
-                                                                    "start": 3806.11,
-                                                                    "children": [],
-                                                                    "time": 0.05
-                                                                }
-                                                            ],
-                                                            "time": 0.16
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "android/content/ContextWrapper.getFilesDir",
-                                                            "start": 3806.26,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                    "category": "Java",
-                                                                    "description": "Runtime.resolveMethodOverload",
-                                                                    "start": 3806.40,
-                                                                    "children": [],
-                                                                    "time": 0.34
-                                                                }
-                                                            ],
-                                                            "time": 2.97
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/File.getCanonicalPath",
-                                                            "start": 3809.29,
-                                                            "children": [],
-                                                            "time": 0.14
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3813.23,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3813.68,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/File.getPath",
-                                                            "start": 3813.74,
-                                                            "children": [],
-                                                            "time": 0.07
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3814.23,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/File.exists",
-                                                            "start": 3814.29,
-                                                            "children": [],
-                                                            "time": 0.09
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3814.81,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/File.exists",
-                                                            "start": 3815.21,
-                                                            "children": [],
-                                                            "time": 0.07
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/File.getAbsolutePath",
-                                                            "start": 3815.32,
-                                                            "children": [],
-                                                            "time": 0.07
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/File.getName",
-                                                            "start": 3815.46,
-                                                            "children": [],
-                                                            "time": 0.05
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3817.66,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3818.98,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3820.23,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "ObjectManager::SetJavaClass",
-                                                            "category": "Java",
-                                                            "description": "",
-                                                            "start": 3821.24,
-                                                            "children": [],
-                                                            "time": 0.03
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3821.31,
-                                                            "children": [],
-                                                            "time": 0.24
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3821.80,
-                                                            "children": [],
-                                                            "time": 0.06
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3821.92,
-                                                            "children": [],
-                                                            "time": 0.10
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3822.07,
-                                                            "children": [],
-                                                            "time": 0.05
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3822.15,
-                                                            "children": [],
-                                                            "time": 0.07
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3822.25,
-                                                            "children": [],
-                                                            "time": 0.49
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.readLine",
-                                                            "start": 3822.77,
-                                                            "children": [],
-                                                            "time": 0.11
-                                                        },
-                                                        {
-                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                            "category": "Java",
-                                                            "description": "java/io/BufferedReader.close",
-                                                            "start": 3823.12,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                    "category": "Java",
-                                                                    "description": "Runtime.resolveMethodOverload",
-                                                                    "start": 3823.16,
-                                                                    "children": [],
-                                                                    "time": 1.18
-                                                                }
-                                                            ],
-                                                            "time": 1.36
-                                                        }
-                                                    ],
-                                                    "time": 327.61
-                                                }
-                                            ],
-                                            "time": 1284.09
-                                        }
-                                    ],
-                                    "time": 1284.51
-                                }
-                            ],
-                            "time": 2866.32
-                        }
-                    ],
-                    "time": 2873.46
-                }
-            ],
-            "time": 2873.83
-        },
-        {
-            "callee": "Module::RequireCallback",
-            "category": "require",
-            "description": "./vendor.js",
-            "start": 4064.50,
-            "children": [
-                {
-                    "callee": "Module::LoadImpl",
-                    "category": "require",
-                    "description": "Module.resolvePath",
-                    "start": 4064.55,
-                    "children": [],
-                    "time": 0.24
-                }
-            ],
-            "time": 0.33
-        },
-        {
-            "callee": "Runtime::callJSMethodNative",
-            "category": "JSMethod",
-            "description": "onCreate",
-            "start": 4067.79,
-            "children": [
-                {
-                    "callee": "Runtime::CallJSMethodNative",
-                    "category": "JSMethod",
-                    "description": "",
-                    "start": 4067.83,
-                    "children": [
-                        {
-                            "callee": "CallbackHandlers::CallJSMethod",
-                            "category": "JSMethod",
-                            "description": "onCreate",
-                            "start": 4067.87,
-                            "children": [
-                                {
-                                    "callee": "CallbackHandlers::CallJSMethod",
-                                    "category": "JSMethod",
-                                    "description": "JS Function call",
-                                    "start": 4067.98,
-                                    "children": [
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/app/Activity.getIntent",
-                                            "start": 4069.15,
-                                            "children": [],
-                                            "time": 66.62
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/content/Intent.getExtras",
-                                            "start": 4136.52,
-                                            "children": [],
-                                            "time": 0.09
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4188.17,
-                                            "children": [],
-                                            "time": 0.03
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4199.16,
-                                            "children": [],
-                                            "time": 0.04
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/app/Activity.onCreate",
-                                            "start": 4199.28,
-                                            "children": [
-                                                {
-                                                    "callee": "Runtime::callJSMethodNative",
-                                                    "category": "JSMethod",
-                                                    "description": "onActivityCreated",
-                                                    "start": 4199.60,
-                                                    "children": [
-                                                        {
-                                                            "callee": "Runtime::CallJSMethodNative",
-                                                            "category": "JSMethod",
-                                                            "description": "",
-                                                            "start": 4199.65,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJSMethod",
-                                                                    "category": "JSMethod",
-                                                                    "description": "onActivityCreated",
-                                                                    "start": 4199.68,
-                                                                    "children": [
-                                                                        {
-                                                                            "callee": "CallbackHandlers::CallJSMethod",
-                                                                            "category": "JSMethod",
-                                                                            "description": "JS Function call",
-                                                                            "start": 4199.76,
-                                                                            "children": [
-                                                                                {
-                                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                    "category": "Java",
-                                                                                    "description": "android/content/ContextWrapper.getPackageManager",
-                                                                                    "start": 4200.16,
-                                                                                    "children": [
-                                                                                        {
-                                                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                            "category": "Java",
-                                                                                            "description": "Runtime.resolveMethodOverload",
-                                                                                            "start": 4200.19,
-                                                                                            "children": [],
-                                                                                            "time": 0.36
-                                                                                        }
-                                                                                    ],
-                                                                                    "time": 42.57
-                                                                                },
-                                                                                {
-                                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                    "category": "Java",
-                                                                                    "description": "android/app/Activity.getComponentName",
-                                                                                    "start": 4242.81,
-                                                                                    "children": [],
-                                                                                    "time": 1.59
-                                                                                },
-                                                                                {
-                                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                    "category": "Java",
-                                                                                    "description": "android/app/ApplicationPackageManager.getActivityInfo",
-                                                                                    "start": 4244.93,
-                                                                                    "children": [
-                                                                                        {
-                                                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                            "category": "Java",
-                                                                                            "description": "Runtime.resolveMethodOverload",
-                                                                                            "start": 4244.96,
-                                                                                            "children": [],
-                                                                                            "time": 0.82
-                                                                                        }
-                                                                                    ],
-                                                                                    "time": 8.96
-                                                                                },
-                                                                                {
-                                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                    "category": "Java",
-                                                                                    "description": "android/os/BaseBundle.getInt",
-                                                                                    "start": 4257.45,
-                                                                                    "children": [],
-                                                                                    "time": 0.15
-                                                                                },
-                                                                                {
-                                                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                    "category": "Java",
-                                                                                    "description": "android/app/Activity.setTheme",
-                                                                                    "start": 4257.65,
-                                                                                    "children": [
-                                                                                        {
-                                                                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                                                                            "category": "Java",
-                                                                                            "description": "Runtime.resolveMethodOverload",
-                                                                                            "start": 4257.69,
-                                                                                            "children": [],
-                                                                                            "time": 9.98
-                                                                                        }
-                                                                                    ],
-                                                                                    "time": 10.65
-                                                                                }
-                                                                            ],
-                                                                            "time": 68.82
-                                                                        }
-                                                                    ],
-                                                                    "time": 68.93
-                                                                }
-                                                            ],
-                                                            "time": 69.00
-                                                        }
-                                                    ],
-                                                    "time": 69.07
-                                                }
-                                            ],
-                                            "time": 69.41
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4287.28,
-                                            "children": [],
-                                            "time": 0.04
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.generateViewId",
-                                            "start": 4287.43,
-                                            "children": [],
-                                            "time": 0.10
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.setId",
-                                            "start": 4287.62,
-                                            "children": [],
-                                            "time": 0.18
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.addOnAttachStateChangeListener",
-                                            "start": 4287.85,
-                                            "children": [],
-                                            "time": 0.12
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.getLayoutParams",
-                                            "start": 4288.19,
-                                            "children": [],
-                                            "time": 0.08
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4290.17,
-                                            "children": [],
-                                            "time": 0.03
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.setLayoutParams",
-                                            "start": 4290.24,
-                                            "children": [],
-                                            "time": 0.21
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.getPaddingLeft",
-                                            "start": 4291.81,
-                                            "children": [],
-                                            "time": 0.51
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/content/ContextWrapper.getApplicationContext",
-                                            "start": 4292.71,
-                                            "children": [
-                                                {
-                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                    "category": "Java",
-                                                    "description": "Runtime.resolveMethodOverload",
-                                                    "start": 4292.75,
-                                                    "children": [],
-                                                    "time": 0.04
-                                                }
-                                            ],
-                                            "time": 0.14
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/content/ContextWrapper.getResources",
-                                            "start": 4292.89,
-                                            "children": [
-                                                {
-                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                    "category": "Java",
-                                                    "description": "Runtime.resolveMethodOverload",
-                                                    "start": 4292.93,
-                                                    "children": [],
-                                                    "time": 0.37
-                                                }
-                                            ],
-                                            "time": 4.25
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/content/res/Resources.getDisplayMetrics",
-                                            "start": 4297.21,
-                                            "children": [],
-                                            "time": 0.91
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.getPaddingTop",
-                                            "start": 4298.95,
-                                            "children": [],
-                                            "time": 0.12
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.getPaddingRight",
-                                            "start": 4299.56,
-                                            "children": [],
-                                            "time": 0.07
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/view/View.getPaddingBottom",
-                                            "start": 4299.98,
-                                            "children": [],
-                                            "time": 0.08
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4300.75,
-                                            "children": [],
-                                            "time": 0.03
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/app/Activity.setContentView",
-                                            "start": 4300.81,
-                                            "children": [],
-                                            "time": 4.66
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4311.07,
-                                            "children": [],
-                                            "time": 0.04
-                                        },
-                                        {
-                                            "callee": "ObjectManager::SetJavaClass",
-                                            "category": "Java",
-                                            "description": "",
-                                            "start": 4314.35,
-                                            "children": [],
-                                            "time": 0.04
-                                        },
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/content/ContextWrapper.getResources",
-                                            "start": 4314.69,
-                                            "children": [
-                                                {
-                                                    "callee": "CallbackHandlers::CallJavaMethod",
-                                                    "category": "Java",
-                                                    "description": "Runtime.resolveMethodOverload",
-                                                    "start": 4314.73,
-                                                    "children": [],
-                                                    "time": 0.04
-                                                }
-                                            ],
-                                            "time": 0.13
-                                        }
-                                    ],
-                                    "time": 271.66
-                                }
-                            ],
-                            "time": 271.84
-                        }
-                    ],
-                    "time": 271.91
-                }
-            ],
-            "time": 271.97
-        },
-        {
-            "callee": "Runtime::callJSMethodNative",
-            "category": "JSMethod",
-            "description": "onStart",
-            "start": 4340.42,
-            "children": [
-                {
-                    "callee": "Runtime::CallJSMethodNative",
-                    "category": "JSMethod",
-                    "description": "",
-                    "start": 4340.44,
-                    "children": [
-                        {
-                            "callee": "CallbackHandlers::CallJSMethod",
-                            "category": "JSMethod",
-                            "description": "onStart",
-                            "start": 4340.48,
-                            "children": [
-                                {
-                                    "callee": "CallbackHandlers::CallJSMethod",
-                                    "category": "JSMethod",
-                                    "description": "JS Function call",
-                                    "start": 4340.52,
-                                    "children": [
-                                        {
-                                            "callee": "CallbackHandlers::CallJavaMethod",
-                                            "category": "Java",
-                                            "description": "android/app/Activity.onStart",
-                                            "start": 4340.91,
-                                            "children": [
-                                                {
-                                                    "callee": "Runtime::callJSMethodNative",
-                                                    "category": "JSMethod",
-                                                    "description": "onActivityStarted",
-                                                    "start": 4341.19,
-                                                    "children": [
-                                                        {
-                                                            "callee": "Runtime::CallJSMethodNative",
-                                                            "category": "JSMethod",
-                                                            "description": "",
-                                                            "start": 4341.22,
-                                                            "children": [
-                                                                {
-                                                                    "callee": "CallbackHandlers::CallJSMethod",
-                                                                    "category": "JSMethod",
-                                                                    "description": "onActivityStarted",
-                                                                    "start": 4341.26,
-                                                                    "children": [
-                                                                        {
-                                                                            "callee": "CallbackHandlers::CallJSMethod",
-                                                                            "category": "JSMethod",
-                                                                            "description": "JS Function call",
-                                                                            "start": 4341.34,
-                                                                            "children": [],
-                                                                            "time": 0.48
-                                                                        }
-                                                                    ],
-                                                                    "time": 0.61
-                                                                }
-                                                            ],
-                                                            "time": 0.70
-                                                        }
-                                                    ],
-                                                    "time": 0.75
-                                                }
-                                            ],
-                                            "time": 1.36
-                                        }
-                                    ],
-                                    "time": 4.94
-                                }
-                            ],
-                            "time": 5.03
-                        }
-                    ],
-                    "time": 5.10
-                }
-            ],
-            "time": 5.15
-        }
-    ]
-}
+[
+    {
+        "callee": "Runtime::Init",
+        "category": "init",
+        "description": "",
+        "start": 785.66,
+        "children": [],
+        "time": 219.23
+    },
+    {
+        "callee": "Module::RequireCallback",
+        "category": "require",
+        "description": "/data/data/org.nativescript.nativescriptsdkexamplesng/files/app/./starter.js",
+        "start": 1189.66,
+        "children": [
+            {
+                "callee": "Module::LoadImpl",
+                "category": "require",
+                "description": "Module.resolvePath",
+                "start": 1189.72,
+                "children": [],
+                "time": 0.25
+            },
+            {
+                "callee": "Module::LoadModule",
+                "category": "require",
+                "description": "",
+                "start": 1190.00,
+                "children": [
+                    {
+                        "callee": "Module::LoadModule",
+                        "category": "require",
+                        "description": "Compilation",
+                        "start": 1190.06,
+                        "children": [],
+                        "time": 6.94
+                    },
+                    {
+                        "callee": "Module::LoadModule",
+                        "category": "require",
+                        "description": "Execution",
+                        "start": 1197.11,
+                        "children": [
+                            {
+                                "callee": "Module::RequireCallback",
+                                "category": "require",
+                                "description": "./vendor",
+                                "start": 1197.19,
+                                "children": [
+                                    {
+                                        "callee": "Module::LoadImpl",
+                                        "category": "require",
+                                        "description": "Module.resolvePath",
+                                        "start": 1197.23,
+                                        "children": [],
+                                        "time": 0.26
+                                    },
+                                    {
+                                        "callee": "Module::LoadModule",
+                                        "category": "require",
+                                        "description": "",
+                                        "start": 1197.53,
+                                        "children": [
+                                            {
+                                                "callee": "Module::LoadModule",
+                                                "category": "require",
+                                                "description": "Compilation",
+                                                "start": 1197.57,
+                                                "children": [],
+                                                "time": 654.64
+                                            },
+                                            {
+                                                "callee": "Module::LoadModule",
+                                                "category": "require",
+                                                "description": "Execution",
+                                                "start": 1852.31,
+                                                "children": [],
+                                                "time": 926.20
+                                            }
+                                        ],
+                                        "time": 1581.04
+                                    }
+                                ],
+                                "time": 1581.43
+                            },
+                            {
+                                "callee": "Module::RequireCallback",
+                                "category": "require",
+                                "description": "./bundle",
+                                "start": 2778.90,
+                                "children": [
+                                    {
+                                        "callee": "Module::LoadImpl",
+                                        "category": "require",
+                                        "description": "Module.resolvePath",
+                                        "start": 2778.94,
+                                        "children": [],
+                                        "time": 0.32
+                                    },
+                                    {
+                                        "callee": "Module::LoadModule",
+                                        "category": "require",
+                                        "description": "",
+                                        "start": 2779.28,
+                                        "children": [
+                                            {
+                                                "callee": "Module::LoadModule",
+                                                "category": "require",
+                                                "description": "Compilation",
+                                                "start": 2779.33,
+                                                "children": [],
+                                                "time": 956.26
+                                            },
+                                            {
+                                                "callee": "Module::LoadModule",
+                                                "category": "require",
+                                                "description": "Execution",
+                                                "start": 3735.70,
+                                                "children": [
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "com/tns/NativeScriptApplication.getInstance",
+                                                        "start": 3786.99,
+                                                        "children": [],
+                                                        "time": 0.43
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "android/content/ContextWrapper.getPackageName",
+                                                        "start": 3787.76,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                "category": "Java",
+                                                                "description": "Runtime.resolveMethodOverload",
+                                                                "start": 3787.82,
+                                                                "children": [],
+                                                                "time": 6.32
+                                                            }
+                                                        ],
+                                                        "time": 6.50
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "android/content/ContextWrapper.getApplicationContext",
+                                                        "start": 3794.35,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                "category": "Java",
+                                                                "description": "Runtime.resolveMethodOverload",
+                                                                "start": 3794.39,
+                                                                "children": [],
+                                                                "time": 0.32
+                                                            }
+                                                        ],
+                                                        "time": 0.41
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3797.46,
+                                                        "children": [],
+                                                        "time": 0.05
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3800.99,
+                                                        "children": [],
+                                                        "time": 0.05
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "android/app/Application.registerActivityLifecycleCallbacks",
+                                                        "start": 3801.08,
+                                                        "children": [],
+                                                        "time": 0.13
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "android/app/Application.registerComponentCallbacks",
+                                                        "start": 3801.25,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                "category": "Java",
+                                                                "description": "Runtime.resolveMethodOverload",
+                                                                "start": 3801.28,
+                                                                "children": [],
+                                                                "time": 3.18
+                                                            }
+                                                        ],
+                                                        "time": 3.29
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "android/content/ContextWrapper.getApplicationContext",
+                                                        "start": 3806.06,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                "category": "Java",
+                                                                "description": "Runtime.resolveMethodOverload",
+                                                                "start": 3806.11,
+                                                                "children": [],
+                                                                "time": 0.05
+                                                            }
+                                                        ],
+                                                        "time": 0.16
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "android/content/ContextWrapper.getFilesDir",
+                                                        "start": 3806.26,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                "category": "Java",
+                                                                "description": "Runtime.resolveMethodOverload",
+                                                                "start": 3806.40,
+                                                                "children": [],
+                                                                "time": 0.34
+                                                            }
+                                                        ],
+                                                        "time": 2.97
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/File.getCanonicalPath",
+                                                        "start": 3809.29,
+                                                        "children": [],
+                                                        "time": 0.14
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3813.23,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3813.68,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/File.getPath",
+                                                        "start": 3813.74,
+                                                        "children": [],
+                                                        "time": 0.07
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3814.23,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/File.exists",
+                                                        "start": 3814.29,
+                                                        "children": [],
+                                                        "time": 0.09
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3814.81,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/File.exists",
+                                                        "start": 3815.21,
+                                                        "children": [],
+                                                        "time": 0.07
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/File.getAbsolutePath",
+                                                        "start": 3815.32,
+                                                        "children": [],
+                                                        "time": 0.07
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/File.getName",
+                                                        "start": 3815.46,
+                                                        "children": [],
+                                                        "time": 0.05
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3817.66,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3818.98,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3820.23,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "ObjectManager::SetJavaClass",
+                                                        "category": "Java",
+                                                        "description": "",
+                                                        "start": 3821.24,
+                                                        "children": [],
+                                                        "time": 0.03
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3821.31,
+                                                        "children": [],
+                                                        "time": 0.24
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3821.80,
+                                                        "children": [],
+                                                        "time": 0.06
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3821.92,
+                                                        "children": [],
+                                                        "time": 0.10
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3822.07,
+                                                        "children": [],
+                                                        "time": 0.05
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3822.15,
+                                                        "children": [],
+                                                        "time": 0.07
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3822.25,
+                                                        "children": [],
+                                                        "time": 0.49
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.readLine",
+                                                        "start": 3822.77,
+                                                        "children": [],
+                                                        "time": 0.11
+                                                    },
+                                                    {
+                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                        "category": "Java",
+                                                        "description": "java/io/BufferedReader.close",
+                                                        "start": 3823.12,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                "category": "Java",
+                                                                "description": "Runtime.resolveMethodOverload",
+                                                                "start": 3823.16,
+                                                                "children": [],
+                                                                "time": 1.18
+                                                            }
+                                                        ],
+                                                        "time": 1.36
+                                                    }
+                                                ],
+                                                "time": 327.61
+                                            }
+                                        ],
+                                        "time": 1284.09
+                                    }
+                                ],
+                                "time": 1284.51
+                            }
+                        ],
+                        "time": 2866.32
+                    }
+                ],
+                "time": 2873.46
+            }
+        ],
+        "time": 2873.83
+    },
+    {
+        "callee": "Module::RequireCallback",
+        "category": "require",
+        "description": "./vendor.js",
+        "start": 4064.50,
+        "children": [
+            {
+                "callee": "Module::LoadImpl",
+                "category": "require",
+                "description": "Module.resolvePath",
+                "start": 4064.55,
+                "children": [],
+                "time": 0.24
+            }
+        ],
+        "time": 0.33
+    },
+    {
+        "callee": "Runtime::callJSMethodNative",
+        "category": "JSMethod",
+        "description": "onCreate",
+        "start": 4067.79,
+        "children": [
+            {
+                "callee": "Runtime::CallJSMethodNative",
+                "category": "JSMethod",
+                "description": "",
+                "start": 4067.83,
+                "children": [
+                    {
+                        "callee": "CallbackHandlers::CallJSMethod",
+                        "category": "JSMethod",
+                        "description": "onCreate",
+                        "start": 4067.87,
+                        "children": [
+                            {
+                                "callee": "CallbackHandlers::CallJSMethod",
+                                "category": "JSMethod",
+                                "description": "JS Function call",
+                                "start": 4067.98,
+                                "children": [
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/app/Activity.getIntent",
+                                        "start": 4069.15,
+                                        "children": [],
+                                        "time": 66.62
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/content/Intent.getExtras",
+                                        "start": 4136.52,
+                                        "children": [],
+                                        "time": 0.09
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4188.17,
+                                        "children": [],
+                                        "time": 0.03
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4199.16,
+                                        "children": [],
+                                        "time": 0.04
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/app/Activity.onCreate",
+                                        "start": 4199.28,
+                                        "children": [
+                                            {
+                                                "callee": "Runtime::callJSMethodNative",
+                                                "category": "JSMethod",
+                                                "description": "onActivityCreated",
+                                                "start": 4199.60,
+                                                "children": [
+                                                    {
+                                                        "callee": "Runtime::CallJSMethodNative",
+                                                        "category": "JSMethod",
+                                                        "description": "",
+                                                        "start": 4199.65,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJSMethod",
+                                                                "category": "JSMethod",
+                                                                "description": "onActivityCreated",
+                                                                "start": 4199.68,
+                                                                "children": [
+                                                                    {
+                                                                        "callee": "CallbackHandlers::CallJSMethod",
+                                                                        "category": "JSMethod",
+                                                                        "description": "JS Function call",
+                                                                        "start": 4199.76,
+                                                                        "children": [
+                                                                            {
+                                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                "category": "Java",
+                                                                                "description": "android/content/ContextWrapper.getPackageManager",
+                                                                                "start": 4200.16,
+                                                                                "children": [
+                                                                                    {
+                                                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                        "category": "Java",
+                                                                                        "description": "Runtime.resolveMethodOverload",
+                                                                                        "start": 4200.19,
+                                                                                        "children": [],
+                                                                                        "time": 0.36
+                                                                                    }
+                                                                                ],
+                                                                                "time": 42.57
+                                                                            },
+                                                                            {
+                                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                "category": "Java",
+                                                                                "description": "android/app/Activity.getComponentName",
+                                                                                "start": 4242.81,
+                                                                                "children": [],
+                                                                                "time": 1.59
+                                                                            },
+                                                                            {
+                                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                "category": "Java",
+                                                                                "description": "android/app/ApplicationPackageManager.getActivityInfo",
+                                                                                "start": 4244.93,
+                                                                                "children": [
+                                                                                    {
+                                                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                        "category": "Java",
+                                                                                        "description": "Runtime.resolveMethodOverload",
+                                                                                        "start": 4244.96,
+                                                                                        "children": [],
+                                                                                        "time": 0.82
+                                                                                    }
+                                                                                ],
+                                                                                "time": 8.96
+                                                                            },
+                                                                            {
+                                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                "category": "Java",
+                                                                                "description": "android/os/BaseBundle.getInt",
+                                                                                "start": 4257.45,
+                                                                                "children": [],
+                                                                                "time": 0.15
+                                                                            },
+                                                                            {
+                                                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                "category": "Java",
+                                                                                "description": "android/app/Activity.setTheme",
+                                                                                "start": 4257.65,
+                                                                                "children": [
+                                                                                    {
+                                                                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                                                                        "category": "Java",
+                                                                                        "description": "Runtime.resolveMethodOverload",
+                                                                                        "start": 4257.69,
+                                                                                        "children": [],
+                                                                                        "time": 9.98
+                                                                                    }
+                                                                                ],
+                                                                                "time": 10.65
+                                                                            }
+                                                                        ],
+                                                                        "time": 68.82
+                                                                    }
+                                                                ],
+                                                                "time": 68.93
+                                                            }
+                                                        ],
+                                                        "time": 69.00
+                                                    }
+                                                ],
+                                                "time": 69.07
+                                            }
+                                        ],
+                                        "time": 69.41
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4287.28,
+                                        "children": [],
+                                        "time": 0.04
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.generateViewId",
+                                        "start": 4287.43,
+                                        "children": [],
+                                        "time": 0.10
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.setId",
+                                        "start": 4287.62,
+                                        "children": [],
+                                        "time": 0.18
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.addOnAttachStateChangeListener",
+                                        "start": 4287.85,
+                                        "children": [],
+                                        "time": 0.12
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.getLayoutParams",
+                                        "start": 4288.19,
+                                        "children": [],
+                                        "time": 0.08
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4290.17,
+                                        "children": [],
+                                        "time": 0.03
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.setLayoutParams",
+                                        "start": 4290.24,
+                                        "children": [],
+                                        "time": 0.21
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.getPaddingLeft",
+                                        "start": 4291.81,
+                                        "children": [],
+                                        "time": 0.51
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/content/ContextWrapper.getApplicationContext",
+                                        "start": 4292.71,
+                                        "children": [
+                                            {
+                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                "category": "Java",
+                                                "description": "Runtime.resolveMethodOverload",
+                                                "start": 4292.75,
+                                                "children": [],
+                                                "time": 0.04
+                                            }
+                                        ],
+                                        "time": 0.14
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/content/ContextWrapper.getResources",
+                                        "start": 4292.89,
+                                        "children": [
+                                            {
+                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                "category": "Java",
+                                                "description": "Runtime.resolveMethodOverload",
+                                                "start": 4292.93,
+                                                "children": [],
+                                                "time": 0.37
+                                            }
+                                        ],
+                                        "time": 4.25
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/content/res/Resources.getDisplayMetrics",
+                                        "start": 4297.21,
+                                        "children": [],
+                                        "time": 0.91
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.getPaddingTop",
+                                        "start": 4298.95,
+                                        "children": [],
+                                        "time": 0.12
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.getPaddingRight",
+                                        "start": 4299.56,
+                                        "children": [],
+                                        "time": 0.07
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/view/View.getPaddingBottom",
+                                        "start": 4299.98,
+                                        "children": [],
+                                        "time": 0.08
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4300.75,
+                                        "children": [],
+                                        "time": 0.03
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/app/Activity.setContentView",
+                                        "start": 4300.81,
+                                        "children": [],
+                                        "time": 4.66
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4311.07,
+                                        "children": [],
+                                        "time": 0.04
+                                    },
+                                    {
+                                        "callee": "ObjectManager::SetJavaClass",
+                                        "category": "Java",
+                                        "description": "",
+                                        "start": 4314.35,
+                                        "children": [],
+                                        "time": 0.04
+                                    },
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/content/ContextWrapper.getResources",
+                                        "start": 4314.69,
+                                        "children": [
+                                            {
+                                                "callee": "CallbackHandlers::CallJavaMethod",
+                                                "category": "Java",
+                                                "description": "Runtime.resolveMethodOverload",
+                                                "start": 4314.73,
+                                                "children": [],
+                                                "time": 0.04
+                                            }
+                                        ],
+                                        "time": 0.13
+                                    }
+                                ],
+                                "time": 271.66
+                            }
+                        ],
+                        "time": 271.84
+                    }
+                ],
+                "time": 271.91
+            }
+        ],
+        "time": 271.97
+    },
+    {
+        "callee": "Runtime::callJSMethodNative",
+        "category": "JSMethod",
+        "description": "onStart",
+        "start": 4340.42,
+        "children": [
+            {
+                "callee": "Runtime::CallJSMethodNative",
+                "category": "JSMethod",
+                "description": "",
+                "start": 4340.44,
+                "children": [
+                    {
+                        "callee": "CallbackHandlers::CallJSMethod",
+                        "category": "JSMethod",
+                        "description": "onStart",
+                        "start": 4340.48,
+                        "children": [
+                            {
+                                "callee": "CallbackHandlers::CallJSMethod",
+                                "category": "JSMethod",
+                                "description": "JS Function call",
+                                "start": 4340.52,
+                                "children": [
+                                    {
+                                        "callee": "CallbackHandlers::CallJavaMethod",
+                                        "category": "Java",
+                                        "description": "android/app/Activity.onStart",
+                                        "start": 4340.91,
+                                        "children": [
+                                            {
+                                                "callee": "Runtime::callJSMethodNative",
+                                                "category": "JSMethod",
+                                                "description": "onActivityStarted",
+                                                "start": 4341.19,
+                                                "children": [
+                                                    {
+                                                        "callee": "Runtime::CallJSMethodNative",
+                                                        "category": "JSMethod",
+                                                        "description": "",
+                                                        "start": 4341.22,
+                                                        "children": [
+                                                            {
+                                                                "callee": "CallbackHandlers::CallJSMethod",
+                                                                "category": "JSMethod",
+                                                                "description": "onActivityStarted",
+                                                                "start": 4341.26,
+                                                                "children": [
+                                                                    {
+                                                                        "callee": "CallbackHandlers::CallJSMethod",
+                                                                        "category": "JSMethod",
+                                                                        "description": "JS Function call",
+                                                                        "start": 4341.34,
+                                                                        "children": [],
+                                                                        "time": 0.48
+                                                                    }
+                                                                ],
+                                                                "time": 0.61
+                                                            }
+                                                        ],
+                                                        "time": 0.70
+                                                    }
+                                                ],
+                                                "time": 0.75
+                                            }
+                                        ],
+                                        "time": 1.36
+                                    }
+                                ],
+                                "time": 4.94
+                            }
+                        ],
+                        "time": 5.03
+                    }
+                ],
+                "time": 5.10
+            }
+        ],
+        "time": 5.15
+    }
+]

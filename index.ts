@@ -52,7 +52,7 @@ function transformEntry(e: Frame): D3Frame {
 }
 
 function loadData(inputPath): D3Frame {
-    let { entries }: { entries: Frame[] } = require(inputPath);
+    let entries: Frame[] = require(inputPath);
 
     const last = entries[entries.length - 1];
     let all = transformEntry({

@@ -1,4 +1,4 @@
-{ "entries":[
+[
 { "callee":"Runtime::Init", "category": "init", "description": "", "start": 1882.16, "children": [ 
 	], "time": 208.25 
 },
@@ -8393,4 +8393,4 @@
 			}], "time": 0.51 
 		}], "time": 0.59 
 	}], "time": 0.64 
-}]}
+}]
